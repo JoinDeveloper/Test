@@ -1,0 +1,924 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+
+    <meta charset="utf-8" />
+
+    <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <title></title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width-divice-width, initial-scale=1.0">
+    <script src="scripts/machine_learning.min.js"></script>
+    <script src="scripts/scripts.js"></script>
+    <meta name="description" content="" />
+    
+     <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link href="style.css" rel="stylesheet" />
+    <link href="http://fonts.googleapis.com/css?family=Droid+Serif:regular,bold" rel="stylesheet" /> <!-- Load Droid Serif from Google Fonts -->
+    
+    <!-- All JavaScript at the bottom, except for Modernizr and Respond.
+      Modernizr enables HTML5 elements & feature detects; Respond is a polyfill for min/max-width CSS3 Media Queries -->
+    <script src="js/modernizr-1.7.min.js"></script>
+    <script src="js/respond.min.js"></script>
+</head>
+
+<body>
+
+<div id="wrapper">
+
+    <header id="header" class="clearfix" role="banner">
+    
+        <hgroup>
+            <h1 id="site-title"><a href="index.html">Ecunesta de desercicion</a></h1>
+            <h2 id="site-description"> en las universidades de Mexico.</h2>
+        </hgroup>
+    
+    </header> <!-- #header -->
+
+<div id="main" class="clearfix">
+    <script lenguaje="javascript">
+      entrenar();
+    </script>
+    <div id="preguntas"><!-- contenedor principal -->  
+      
+      <div id="preg1"><!-- inicio pregunta 1 -->
+        <label>1.-Seleccione su edad: </label><br>            
+        <input type="radio" name="radP01" id="p01o01" value="1" checked="checked" />
+        <label for="p01o01">17</label>
+
+        <input type="radio" name="radP01" id="p01o02" value="2" />
+        <label for="p01o02">18</label>
+
+        <input type="radio" name="radP01" id="p01o03" value="3" />
+        <label for="p01o03">19</label>
+
+        <input type="radio" name="radP01" id="p01o04" value="4" />
+        <label for="p01o04">20</label>
+
+        <input type="radio" name="radP01" id="p01o05" value="5" />
+        <label for="p01o05">21</label>
+
+        <input type="radio" name="radP01" id="p01o06" value="6" />
+        <label for="p01o06">22</label>
+
+        <input type="radio" name="radP01" id="p01o07" value="7" />
+        <label for="p01o07">23</label>
+
+        <input type="radio" name="radP01" id="p01o08" value="8" />
+        <label for="p01o08">24</label>
+
+        <input type="radio" name="radP01" id="p01o09" value="9" />
+        <label for="p01o09">25</label>
+
+        <input type="radio" name="radP01" id="p01o010" value="10" />
+        <label for="p01o010">26</label>
+
+        <input type="radio" name="radP01" id="p01o011" value="11" />
+        <label for="p01o011">27</label>
+
+        <input type="radio" name="radP01" id="p01o012" value="12" />
+        <label for="p01o012">28</label>
+
+        <input type="radio" name="radP01" id="p01o013" value="13" />
+        <label for="p01o013">29</label>
+
+        <input type="radio" name="radP01" id="p01o014" value="14" />
+        <label for="p01o014">30</label>
+      </div><!-- fin pregunta 1 -->
+
+
+      <br>
+
+
+      <div id="preg2"><!-- inicio pregunta 2 -->
+        <label>2.-Seleccione Genero: </label><br>            
+        <input type="radio" name="radP02" id="p02o01" value="1" checked="checked" />
+        <label for="p02o01">Femenino</label>
+        <input type="radio" name="radP02" id="p02o02" value="2" />
+        <label for="p02o02">Masculino</label>
+      </div><!-- fin pregunta 2 -->
+
+
+      <br>
+
+
+      <div id="preg3"><!-- inicio pregunta 3 -->
+        <label>3.-Seleccione el estado civil: </label><br>            
+        <input type="radio" name="radP03" id="p03o01" value="1" checked="checked" />
+        <label for="p03o01">Soltero</label>
+        
+        <input type="radio" name="radP03" id="p03o02" value="2" />
+        <label for="p03o02">Casado</label>
+        
+        <input type="radio" name="radP03" id="p03o03" value="3" />
+        <label for="p03o03">Divorciado</label>
+        
+        <input type="radio" name="radP03" id="p03o04" value="4" />
+        <label for="p03o04">Unión Libre</label>
+      </div><!-- fin pregunta 3 -->
+
+
+      <br>
+
+
+      <div id="preg4"><!-- inicio pregunta 4 -->
+        <label>4.-Tipo de Universidad: </label><br>            
+        <input type="radio" name="radP04" id="p04o01" value="1" checked="checked" />
+        <label for="p04o01">Publica</label>
+        
+        <input type="radio" name="radP04" id="p04o02" value="2" />
+        <label for="p04o02">Privada</label>
+      </div><!-- fin pregunta 4 -->
+
+
+      <br>
+
+
+
+      <div id="preg5"><!-- inicio pregunta 5 -->
+        <label>5.- Promedio con el cual ingresa a la universidad (El rango es de 7 a 10, seleccione el aproximado): </label><br>            
+        <input type="radio" name="radP05" id="p05o01" value="1" checked="checked" />
+        <label for="p05o01">7</label>
+        
+        <input type="radio" name="radP05" id="p05o02" value="2" />
+        <label for="p05o02">8</label>
+        
+        <input type="radio" name="radP05" id="p05o03" value="3" />
+        <label for="p05o03">9</label>
+        
+        <input type="radio" name="radP05" id="p05o04" value="4" />
+        <label for="p05o04">10</label>
+      </div><!-- fin pregunta 5 -->
+
+
+      <br>
+
+
+
+      <div id="preg6"><!-- inicio pregunta 6 -->
+        <label>6.-Elección de la carrera: </label><br>            
+        <input type="radio" name="radP06" id="p06o01" value="1" checked="checked" />
+        <label for="p06o01">Desición propia</label>
+        
+        <input type="radio" name="radP06" id="p06o02" value="2" />
+        <label for="p06o02">Familia</label>
+        
+        <input type="radio" name="radP06" id="p06o03" value="3" />
+        <label for="p06o03">Orientación vocacional</label>
+      </div><!-- fin pregunta 6 -->
+
+
+      <br>
+
+
+      <div id="preg7"><!-- inicio pregunta 7 -->
+        <label>7.-Factores que influiyen en el desempeño academico: </label><br>            
+        <input type="radio" name="radP07" id="p07o01" value="1" checked="checked" />
+        <label for="p07o01">Ninguno</label>
+        
+        <input type="radio" name="radP07" id="p07o02" value="2" />
+        <label for="p07o02">Dinero</label>
+        
+        <input type="radio" name="radP07" id="p07o03" value="3" />
+        <label for="p07o03">Desinteres</label>
+        
+        <input type="radio" name="radP07" id="p07o04" value="4" />
+        <label for="p07o04">Trabajo</label>
+      </div><!-- fin pregunta 7 -->
+      
+
+      <br>
+
+
+      <div id="preg8"><!-- inicio pregunta 8 -->
+        <label>8.-Tiempo dedicado a estudiar (selecciona el más proximo): </label><br>            
+        <input type="radio" name="radP08" id="p08o01" value="1" checked="checked" />
+        <label for="p08o01">1 hr.</label>
+        
+        <input type="radio" name="radP08" id="p08o02" value="2" />
+        <label for="p08o02">2 hr.</label>
+        
+        <input type="radio" name="radP08" id="p08o03" value="3" />
+        <label for="p08o03">3 hr.</label>
+        
+        <input type="radio" name="radP08" id="p08o04" value="4" />
+        <label for="p08o04">4 hr.</label>
+
+        <input type="radio" name="radP08" id="p08o05" value="5" />
+        <label for="p08o05">Más de 5hr.</label>
+      </div><!-- fin pregunta 8 -->
+
+
+      <br>
+
+
+      <div id="preg9"><!-- inicio pregunta 9 -->
+        <label>9.- Frecuencia de inasistencia a clases (La asistencia es al Mes,  seleccione la más próxima): </label><br>            
+        <input type="radio" name="radP09" id="p09o01" value="1" checked="checked" />
+        <label for="p09o01">1 al mes.</label>
+        
+        <input type="radio" name="radP09" id="p09o02" value="2" />
+        <label for="p09o02">3 al mes.</label>
+        
+        <input type="radio" name="radP09" id="p09o03" value="3" />
+        <label for="p09o03">5 al mes.</label>
+        
+        <input type="radio" name="radP09" id="p09o04" value="4" />
+        <label for="p09o04">7 al mes.</label>
+
+        <input type="radio" name="radP09" id="p09o05" value="5" />
+        <label for="p09o05">Más de 8 al mes.</label>
+      </div><!-- fin pregunta 9 -->
+
+
+      <br>
+
+
+      <div id="preg10"><!-- inicio pregunta 10 -->
+        <label>10.-La universidad que elegiste es: </label><br>            
+        <input type="radio" name="radP010" id="p010o01" value="1" checked="checked" />
+        <label for="p010o01">Priemra opción</label>
+        
+        <input type="radio" name="radP010" id="p010o02" value="2" />
+        <label for="p010o02">Segunda opción</label>
+        
+        <input type="radio" name="radP010" id="p010o03" value="3" />
+        <label for="p010o03">Ultima opción</label>
+      </div><!-- fin pregunta 10 -->
+
+
+      <br>
+
+
+      <div id="preg11"><!-- inicio pregunta 11 -->
+        <label>11.-Numero de materias reprobadas: </label><br>            
+        <input type="radio" name="radP011" id="p011o01" value="1" checked="checked" />
+        <label for="p011o01">1</label>
+        
+        <input type="radio" name="radP011" id="p011o02" value="2" />
+        <label for="p011o02">2</label>
+
+        <input type="radio" name="radP011" id="p011o03" value="3" />
+        <label for="p011o03">3</label>
+
+        <input type="radio" name="radP011" id="p011o04" value="4" />
+        <label for="p011o04">4</label>
+
+        <input type="radio" name="radP011" id="p011o05" value="5" />
+        <label for="p011o05">5</label>
+
+        <input type="radio" name="radP011" id="p011o06" value="6" />
+        <label for="p011o06">6</label>        
+      </div><!-- fin pregunta 11 -->
+
+
+      <br>
+
+
+      <div id="preg12"><!-- inicio pregunta 12 -->
+        <label>12.-Numero de materias dadas de baja: </label><br>            
+        <input type="radio" name="radP012" id="p012o01" value="1" checked="checked" />
+        <label for="p012o01">1</label>
+        
+        <input type="radio" name="radP012" id="p012o02" value="2" />
+        <label for="p012o02">2</label>
+
+        <input type="radio" name="radP012" id="p012o03" value="3" />
+        <label for="p012o03">3</label>
+
+        <input type="radio" name="radP012" id="p012o04" value="4" />
+        <label for="p012o04">4</label>
+
+        <input type="radio" name="radP012" id="p012o05" value="5" />
+        <label for="p012o05">5</label>
+
+        <input type="radio" name="radP012" id="p012o06" value="6" />
+        <label for="p012o06">6</label>        
+      </div><!-- fin pregunta 12 -->
+
+
+      <br>
+
+
+      <div id="preg13"><!-- inicio pregunta 13 -->
+        <label>13.-Numero de materias resursadas:  </label><br>            
+        <input type="radio" name="radP013" id="p013o01" value="1" checked="checked" />
+        <label for="p013o01">1</label>
+        
+        <input type="radio" name="radP013" id="p013o02" value="2" />
+        <label for="p013o02">2</label>
+
+        <input type="radio" name="radP013" id="p013o03" value="3" />
+        <label for="p013o03">3</label>
+
+        <input type="radio" name="radP013" id="p013o04" value="4" />
+        <label for="p013o04">4</label>
+
+        <input type="radio" name="radP013" id="p013o05" value="5" />
+        <label for="p013o05">5</label>
+
+        <input type="radio" name="radP013" id="p013o06" value="6" />
+        <label for="p013o06">6</label>        
+      </div><!-- fin pregunta 13 -->
+
+
+      <br>
+
+
+      <div id="preg14"><!-- inicio pregunta 14 -->
+        <label>14.-Numero de estraordinarios realizados: </label><br>            
+        <input type="radio" name="radP014" id="p014o01" value="1" checked="checked" />
+        <label for="p014o01">1</label>
+        
+        <input type="radio" name="radP014" id="p014o02" value="2" />
+        <label for="p014o02">2</label>
+
+        <input type="radio" name="radP014" id="p014o03" value="3" />
+        <label for="p014o03">3</label>
+
+        <input type="radio" name="radP014" id="p014o04" value="4" />
+        <label for="p014o04">4</label>
+
+        <input type="radio" name="radP014" id="p014o05" value="5" />
+        <label for="p014o05">5</label>
+
+        <input type="radio" name="radP014" id="p014o06" value="6" />
+        <label for="p014o06">6</label>        
+      </div><!-- fin pregunta 14 -->
+
+
+      <br>
+
+
+      <div id="preg15"><!-- inicio pregunta 15 -->
+        <label>15.-Tipo de transporte para ir a la universidad: </label><br>            
+        <input type="radio" name="radP015" id="p015o01" value="1" checked="checked" />
+        <label for="p015o01">Trasporte publico</label>
+        
+        <input type="radio" name="radP015" id="p015o02" value="2" />
+        <label for="p015o02">Personal</label>
+
+        <input type="radio" name="radP015" id="p015o03" value="3" />
+        <label for="p015o03">Caminando</label>
+
+        <input type="radio" name="radP015" id="p015o04" value="4" />
+        <label for="p015o04">Bicicleta</label>      
+      </div><!-- fin pregunta 15 -->
+
+
+
+      <br>
+
+
+      <div id="preg16"><!-- inicio pregunta 16 -->
+        <label>16.- Tiempo de translado de casa/trabajo a la universidad (Seleccione el aproximado) </label><br>            
+        <input type="radio" name="radP016" id="p016o01" value="1" checked="checked" />
+        <label for="p016o01">30 minutos</label>
+        
+        <input type="radio" name="radP016" id="p016o02" value="2" />
+        <label for="p016o02">40 minutos</label>
+
+        <input type="radio" name="radP016" id="p016o03" value="3" />
+        <label for="p016o03">50 minutos</label>
+
+        <input type="radio" name="radP016" id="p016o04" value="4" />
+        <label for="p016o04">60 minutos</label>
+
+        <input type="radio" name="radP016" id="p016o05" value="5" />
+        <label for="p016o05">90 minutos</label>
+
+        <input type="radio" name="radP016" id="p016o06" value="6" />
+        <label for="p016o06">Más de 100 minutos</label>        
+      </div><!-- fin pregunta 17 -->
+
+
+      <br>
+
+
+      <div id="preg17"><!-- inicio pregunta 17 -->
+        <label>17.-Numero de materias dadas de baja: </label><br>            
+        <input type="radio" name="radP017" id="p017o01" value="1" checked="checked" />
+        <label for="p017o01">Ninguna</label>
+        
+        <input type="radio" name="radP017" id="p017o02" value="2" />
+        <label for="p017o02">Trabajo</label>
+
+        <input type="radio" name="radP017" id="p017o03" value="3" />
+        <label for="p017o03">Trafico</label>
+
+        <input type="radio" name="radP017" id="p017o04" value="4" />
+        <label for="p017o04">Falta de interes</label>     
+      </div><!-- fin pregunta 17 -->
+
+
+      <br>
+
+
+      <div id="preg18"><!-- inicio pregunta 18 -->
+        <label>18.- Turno al que asiste a la universidad: </label><br>            
+        <input type="radio" name="radP018" id="p018o01" value="1" checked="checked" />
+        <label for="p018o01">Matutino</label>
+        
+        <input type="radio" name="radP018" id="p018o02" value="2" />
+        <label for="p018o02">Vespertino</label>      
+      </div><!-- fin pregunta 12 -->
+
+
+      <br>
+
+
+      <div id="preg19"><!-- inicio pregunta 19 -->
+        <label>19.-Tiempo que dedica a estudiar (Seleccione la más aproximada) </label><br>            
+        <input type="radio" name="radP019" id="p019o01" value="1" checked="checked" />
+        <label for="p019o01">1 hr.</label>
+        
+        <input type="radio" name="radP019" id="p019o02" value="2" />
+        <label for="p019o02">2 hrs.</label>
+
+        <input type="radio" name="radP019" id="p019o03" value="3" />
+        <label for="p019o03">3 hrs.</label>
+
+        <input type="radio" name="radP019" id="p019o04" value="4" />
+        <label for="p019o04">4 hrs.</label>
+
+        <input type="radio" name="radP019" id="p019o05" value="5" />
+        <label for="p019o05">Más de 5 hrs.</label>
+      </div><!-- fin pregunta 19 -->
+
+
+      <br>
+
+
+      <div id="preg20"><!-- inicio pregunta 20 -->
+        <label>20.-Frecuencia con la que asiste a la biblioteca(A la semana) </label><br>            
+        <input type="radio" name="radP020" id="p020o01" value="1" checked="checked" />
+        <label for="p020o01">Ninguna</label>
+        
+        <input type="radio" name="radP020" id="p020o02" value="2" />
+        <label for="p020o02">1 vez</label>
+
+        <input type="radio" name="radP020" id="p020o03" value="3" />
+        <label for="p020o03">2 veces</label>
+
+        <input type="radio" name="radP020" id="p020o04" value="4" />
+        <label for="p020o04">3 veces</label>
+
+        <input type="radio" name="radP020" id="p020o05" value="5" />
+        <label for="p020o05">4 veces</label>
+
+        <input type="radio" name="radP020" id="p020o06" value="6" />
+        <label for="p020o06">5 veces</label>        
+      </div><!-- fin pregunta 20 -->
+
+
+      <br>
+
+
+      <div id="preg21"><!-- inicio pregunta 21 -->
+        <label>21.-La universidad cuenta con internet: </label><br>            
+        <input type="radio" name="radP021" id="p021o01" value="1" checked="checked" />
+        <label for="p021o01">Inalambrica</label>
+        
+        <input type="radio" name="radP021" id="p021o02" value="2" />
+        <label for="p021o02">Alambrica</label>      
+      </div><!-- fin pregunta 21 -->
+
+
+      <br>
+
+
+      <div id="preg22"><!-- inicio pregunta 22 -->
+        <label>22.-Frecuencia con la que ocupa la computadora de forma productiva proyecto, tareas e investigación (Seleccione el tiempo más aproximado)</label><br>            
+        <input type="radio" name="radP022" id="p022o01" value="1" checked="checked" />
+        <label for="p022o01">1 hr.</label>
+        
+        <input type="radio" name="radP022" id="p022o02" value="2" />
+        <label for="p022o02">2 hrs.</label>
+
+        <input type="radio" name="radP022" id="p022o03" value="3" />
+        <label for="p022o03">3 hrs.</label>
+
+        <input type="radio" name="radP022" id="p022o04" value="4" />
+        <label for="p022o04">4 hrs.</label>
+
+        <input type="radio" name="radP022" id="p022o05" value="5" />
+        <label for="p022o05">Más de 5 hrs.</label>      
+      </div><!-- fin pregunta 22 -->
+
+
+      <br>
+
+
+      <div id="preg23"><!-- inicio pregunta 23 -->
+        <label>23.-Has tenido problemas con profesores: </label><br>            
+        <input type="radio" name="radP023" id="p023o01" value="1" checked="checked" />
+        <label for="p023o01">Ninguno</label>
+        
+        <input type="radio" name="radP023" id="p023o02" value="2" />
+        <label for="p023o02">Motivo de calificaciones.</label>
+
+        <input type="radio" name="radP023" id="p023o03" value="3" />
+        <label for="p023o03">Interrumpir en clase.</label>      
+      </div><!-- fin pregunta 23 -->
+
+
+      <br>
+
+
+      <div id="preg24"><!-- inicio pregunta 24 -->
+        <label>24.-Promedio universitario (El rango es de 7 a 10, seleccione el aprximado)</label><br>           
+        <input type="radio" name="radP024" id="p024o01" value="1" checked="checked" />
+        <label for="p024o01">7.0</label>
+        
+        <input type="radio" name="radP024" id="p024o02" value="2" />
+        <label for="p024o02">8.0</label>
+
+        <input type="radio" name="radP024" id="p024o03" value="3" />
+        <label for="p024o03">9.0</label>
+
+        <input type="radio" name="radP024" id="p024o04" value="4" />
+        <label for="p024o04">10.0</label>      
+      </div><!-- fin pregunta 24 -->
+
+
+      <br>
+
+
+      <div id="preg25"><!-- inicio pregunta 25 -->
+        <label>25.-Condición laboral actual:</label><br>            
+        <input type="radio" name="radP025" id="p025o01" value="1" checked="checked" />
+        <label for="p025o01">Ninguna</label>
+        
+        <input type="radio" name="radP025" id="p025o02" value="2" />
+        <label for="p025o02">En busca de Empleo</label>
+
+        <input type="radio" name="radP025" id="p025o03" value="3" />
+        <label for="p025o03">Trabaja</label>      
+      </div><!-- fin pregunta 25 -->
+
+
+      <br>
+
+
+      <div id="preg26"><!-- inicio pregunta 26 -->
+        <label>26.-Equipo de computo es:</label><br>            
+        <input type="radio" name="radP026" id="p026o01" value="1" checked="checked" />
+        <label for="p026o01">Ninguna</label>
+        
+        <input type="radio" name="radP026" id="p026o02" value="2" />
+        <label for="p026o02">Escritorio</label>
+
+        <input type="radio" name="radP026" id="p026o03" value="3" />
+        <label for="p026o03">Laptop</label>      
+      </div><!-- fin pregunta 26 -->
+
+
+      <br>
+
+
+      <div id="preg27"><!-- inicio pregunta 27 -->
+        <label>27.-Tipo de Intenet: </label><br>            
+        <input type="radio" name="radP027" id="p027o01" value="1" checked="checked" />
+        <label for="p027o01">No tengo</label>
+        
+        <input type="radio" name="radP027" id="p027o02" value="2" />
+        <label for="p027o02">Propio</label>
+
+        <input type="radio" name="radP027" id="p027o03" value="3" />
+        <label for="p027o03">Compartido</label>      
+      </div><!-- fin pregunta 27 -->
+
+
+      <br>
+
+
+      <div id="preg28"><!-- inicio pregunta 28 -->
+        <label>28.-Obtención de ingresos para gastos escolares: </label><br>            
+        <input type="radio" name="radP028" id="p028o01" value="1" checked="checked" />
+        <label for="p028o01">Padre</label>
+        
+        <input type="radio" name="radP028" id="p028o02" value="2" />
+        <label for="p028o02">Madre</label>
+
+        <input type="radio" name="radP028" id="p028o03" value="3" />
+        <label for="p028o03">Ambos padre y madre</label>
+
+        <input type="radio" name="radP028" id="p028o04" value="4" />
+        <label for="p028o04">Abuelos</label>
+
+        <input type="radio" name="radP028" id="p028o05" value="5" />
+        <label for="p028o05">Tios</label>
+
+        <input type="radio" name="radP028" id="p028o06" value="6" />
+        <label for="p028o06">Esposo(a)</label>  
+
+        <input type="radio" name="radP028" id="p028o07" value="7" />
+        <label for="p028o07">Beca</label>
+
+        <input type="radio" name="radP028" id="p028o08" value="8" />
+        <label for="p028o08">Propio</label>        
+      </div><!-- fin pregunta 28 -->
+
+
+      <br>
+
+
+      <div id="preg29"><!-- inicio pregunta 29 -->
+        <label>29.-Pagos de colegiatuta  en tiempo y forma: </label><br>            
+        <input type="radio" name="radP029" id="p029o01" value="1" checked="checked" />
+        <label for="p029o01">Nunca</label>
+        
+        <input type="radio" name="radP029" id="p029o02" value="2" />
+        <label for="p029o02">En ocaciones</label>
+
+        <input type="radio" name="radP029" id="p029o03" value="3" />
+        <label for="p029o03">Siemrpe</label>       
+      </div><!-- fin pregunta 29 -->
+
+
+      <br>
+
+
+      <div id="preg30"><!-- inicio pregunta 30 -->
+        <label>30.-Personas que dependan economicamente: </label><br>            
+        <input type="radio" name="radP030" id="p030o01" value="1" checked="checked" />
+        <label for="p030o01">Familia</label>
+        
+        <input type="radio" name="radP030" id="p030o02" value="2" />
+        <label for="p030o02">Hijos</label>
+
+        <input type="radio" name="radP030" id="p030o03" value="3" />
+        <label for="p030o03">Nadie</label>      
+      </div><!-- fin pregunta 30 -->
+
+
+      <br>
+
+
+      <div id="preg31"><!-- inicio pregunta 31 -->
+        <label>31.-Vive con: </label><br>            
+        <input type="radio" name="radP031" id="p031o01" value="1" checked="checked" />
+        <label for="p031o01">Padre</label>
+        
+        <input type="radio" name="radP031" id="p031o02" value="2" />
+        <label for="p031o02">Madre</label>
+
+        <input type="radio" name="radP031" id="p031o03" value="3" />
+        <label for="p031o03">Ambos padre y madre</label>
+
+        <input type="radio" name="radP031" id="p031o04" value="4" />
+        <label for="p031o04">Abuelos</label>
+
+        <input type="radio" name="radP031" id="p031o05" value="5" />
+        <label for="p031o05">Tios</label>
+
+        <input type="radio" name="radP031" id="p031o06" value="6" />
+        <label for="p031o06">Esposo(a)</label>      
+
+        <input type="radio" name="radP031" id="p031o07" value="7" />
+        <label for="p031o07">Solo</label>     
+      </div><!-- fin pregunta 31 -->
+
+
+      <br>
+
+
+      <div id="preg32"><!-- inicio pregunta 32 -->
+        <label>32.-La casa donde vive es:</label><br>            
+        <input type="radio" name="radP032" id="p032o01" value="1" checked="checked" />
+        <label for="p032o01">Propia</label>
+        
+        <input type="radio" name="radP032" id="p032o02" value="2" />
+        <label for="p032o02">Renta</label>
+
+        <input type="radio" name="radP032" id="p032o03" value="3" />
+        <label for="p032o03">Prestada</label>    
+      </div><!-- fin pregunta 31 -->
+
+
+      <br>
+
+
+      <div id="preg33"><!-- inicio pregunta 33 -->
+        <label>33.-Numero de hermanos: </label><br>            
+        <input type="radio" name="radP033" id="p033o01" value="1" checked="checked" />
+        <label for="p033o01">1</label>
+        
+        <input type="radio" name="radP033" id="p033o02" value="2" />
+        <label for="p033o02">2</label>
+
+        <input type="radio" name="radP033" id="p033o03" value="3" />
+        <label for="p033o03">3</label>
+
+        <input type="radio" name="radP033" id="p033o04" value="4" />
+        <label for="p033o04">4</label>
+
+        <input type="radio" name="radP033" id="p033o05" value="5" />
+        <label for="p033o05">5</label>
+
+        <input type="radio" name="radP033" id="p033o06" value="6" />
+        <label for="p033o06">Más de 6</label>         
+      </div><!-- fin pregunta 33 -->
+
+
+      <br>
+
+
+      <div id="preg34"><!-- inicio pregunta 34 -->
+        <label>34.-Numero de hermanos que cuentan con titutlo universitario: </label><br>            
+        <input type="radio" name="radP034" id="p034o01" value="1" checked="checked" />
+        <label for="p034o01">Ninguno</label>
+        
+        <input type="radio" name="radP034" id="p034o02" value="2" />
+        <label for="p034o02">1</label>
+
+        <input type="radio" name="radP034" id="p034o03" value="3" />
+        <label for="p034o03">2</label>
+
+        <input type="radio" name="radP034" id="p034o04" value="4" />
+        <label for="p034o04">3</label>
+
+        <input type="radio" name="radP034" id="p034o05" value="5" />
+        <label for="p034o05">4</label>
+
+        <input type="radio" name="radP034" id="p034o06" value="6" />
+        <label for="p034o06">5</label>      
+
+        <input type="radio" name="radP034" id="p034o07" value="7" />
+        <label for="p034o07">Más de 6</label>     
+      </div><!-- fin pregunta 31 -->
+
+
+      <br>
+
+
+      <div id="preg35"><!-- inicio pregunta 31 -->
+        <label>35.-Numero de personas que viven en su casa: </label><br>            
+        <input type="radio" name="radP035" id="p035o01" value="1" checked="checked" />
+        <label for="p035o01">1</label>
+        
+        <input type="radio" name="radP035" id="p035o02" value="2" />
+        <label for="p035o02">2</label>
+
+        <input type="radio" name="radP035" id="p035o03" value="3" />
+        <label for="p035o03">3</label>
+
+        <input type="radio" name="radP035" id="p035o04" value="4" />
+        <label for="p035o04">4</label>
+
+        <input type="radio" name="radP035" id="p035o05" value="5" />
+        <label for="p035o05">5</label>
+
+        <input type="radio" name="radP035" id="p035o06" value="6" />
+        <label for="p035o06">Más de 6</label>        
+      </div><!-- fin pregunta 35 -->
+
+
+      <br>
+
+
+      <div id="preg36"><!-- inicio pregunta 31 -->
+        <label>36.-Quién solventa los gatos de casa: </label><br>            
+        <input type="radio" name="radP036" id="p036o01" value="1" checked="checked" />
+        <label for="p036o01">Padre</label>
+        
+        <input type="radio" name="radP036" id="p036o02" value="2" />
+        <label for="p036o02">Madre</label>
+
+        <input type="radio" name="radP036" id="p036o03" value="3" />
+        <label for="p036o03">Ambos padre y madre</label>
+
+        <input type="radio" name="radP036" id="p036o04" value="4" />
+        <label for="p036o04">Yo</label>
+      </div><!-- fin pregunta 36 -->
+
+
+      <br>
+
+
+
+      <div id="preg37"><!-- inicio pregunta 37 -->
+        <label>37.-Numero de hermanos que actualmente estudian: </label><br>            
+        <input type="radio" name="radP037" id="p037o01" value="1" checked="checked" />
+        <label for="p037o01">1</label>
+        
+        <input type="radio" name="radP037" id="p037o02" value="2" />
+        <label for="p037o02">2</label>
+
+        <input type="radio" name="radP037" id="p037o03" value="3" />
+        <label for="p037o03">3</label>
+
+        <input type="radio" name="radP037" id="p037o04" value="4" />
+        <label for="p037o04">4</label>
+
+        <input type="radio" name="radP037" id="p037o05" value="5" />
+        <label for="p037o05">5</label>
+
+        <input type="radio" name="radP037" id="p037o06" value="6" />
+        <label for="p037o06">Más de 6</label>         
+      </div><!-- fin pregunta 37 -->
+
+
+      <br>
+
+
+      <div id="preg38"><!-- inicio pregunta 38 -->
+        <label>38.- Realiza actividades extra riculares: </label><br>            
+        <input type="radio" name="radP038" id="p038o01" value="1" checked="checked" />
+        <label for="p038o01">Ninguna</label>
+        
+        <input type="radio" name="radP038" id="p038o02" value="2" />
+        <label for="p038o02">Deporte</label>
+
+        <input type="radio" name="radP038" id="p038o03" value="3" />
+        <label for="p038o03">Musica</label>
+
+        <input type="radio" name="radP038" id="p038o04" value="4" />
+        <label for="p038o04">Baile</label>
+
+        <input type="radio" name="radP038" id="p038o05" value="5" />
+        <label for="p038o05">Teatro</label>
+      </div><!-- fin pregunta 38 -->
+
+
+      <br>
+
+
+      <div id="preg39"><!-- inicio pregunta 39 -->
+        <label>39.-Relación con tus compañeros de clase: </label><br>            
+        <input type="radio" name="radP039" id="p039o01" value="1" checked="checked" />
+        <label for="p039o01">Mala</label>
+        
+        <input type="radio" name="radP039" id="p039o02" value="2" />
+        <label for="p039o02">Regular</label>
+
+        <input type="radio" name="radP039" id="p039o03" value="3" />
+        <label for="p039o03">Buena</label>
+
+        <input type="radio" name="radP039" id="p039o04" value="4" />
+        <label for="p039o04">Excelente</label>  
+      </div><!-- fin pregunta 39 -->
+
+      
+      <br>
+
+
+       <div id="preg40"><!-- inicio pregunta 40 -->
+        <label>40.-Discapacidad fisica: </label><br>            
+        <input type="radio" name="radP040" id="p040o01" value="1" checked="checked" />
+        <label for="p040o01">Ninguna</label>
+        
+        <input type="radio" name="radP040" id="p040o02" value="2" />
+        <label for="p040o02">Visual</label>
+
+        <input type="radio" name="radP040" id="p040o03" value="3" />
+        <label for="p040o03">MEntal</label>
+
+        <input type="radio" name="radP040" id="p040o04" value="4" />
+        <label for="p040o04">Motora</label>
+      </div><!-- fin pregunta 38 -->      
+
+
+      <br>
+
+
+      <div id="preg41"><!-- inicio pregunta 41 -->
+        <label>41-Pasatiempo: </label><br>            
+        <input type="radio" name="radP041" id="p041o01" value="1" checked="checked" />
+        <label for="p041o01">Ninguna</label>
+        
+        <input type="radio" name="radP041" id="p041o02" value="2" />
+        <label for="p041o02">VideoJuegos</label>
+
+        <input type="radio" name="radP041" id="p041o03" value="3" />
+        <label for="p041o03">Musica</label>
+
+        <input type="radio" name="radP041" id="p041o04" value="4" />
+        <label for="p041o04">Lectura</label>
+
+        <input type="radio" name="radP041" id="p041o05" value="5" />
+        <label for="p041o05">Dibujo</label>
+
+        <input type="radio" name="radP041" id="p041o06" value="6" />
+        <label for="p041o06">Salir con amigos/familiares.</label>         
+      </div><!-- fin pregunta 37 -->
+      
+
+      <br>
+
+
+      <p><button type="button" name="getVal" onclick="creaYClasificaInstancia()">Determinar riesgo</button></p>
+    
+    </div><!-- fin contenedor principal -->
+    
+    
+    
+  </body><!-- end of body -->
+</html><!-- end of html -->
